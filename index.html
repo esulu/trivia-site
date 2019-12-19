@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main" id="main">
+            <h1>Trivia Game</h1>
+            <h3>Made by Eren Sulutas</h3>
+        </div>
+
+        <div class="admin" id="admin">
+            <!--Admin page-->
+            <h1>Admin Tools</h1>
+
+            <br><input type="button" id="admin-btn" value="Home Page" onclick="mainPage()"></input><br><br>
+            
+            <input type="button" id="restart-btn" value="Restart Game" onclick="restartGame()"></input>
+            <input type="button" id="force-next" value="Next Question" onclick="forceNext()"></input><br><br>
+            <input type="text" id="id-box"></input>
+            <input type="button" id="remove-btn" value="Remove Player" onclick="removePlayer()"></input>
+        </div>
+
+        <div class="stats-bar" id="stats-bar">
+            <!--Player Stats Taskbar menu-->
+            <h1>Player Statistics</h1>
+            <br><input type="button" id="admin-btn" value="Home Page" onclick="mainPage()"></input><br><br>
+        </div>
+
+        <div class="stats" id="stats">
+            <!--Player Stats are displayed here-->
+        </div>
+
+        <div class="menu-btn" id="menu-btn">
+            <!--Main menu buttons-->
+            <input type="button" id="admin-btn" value="Administrator Page" onclick="adminPage()"></input>
+            <input type="button" id="stat-btn" value="Player Stats" onclick="statPage()"></input>
+        </div>
+
+        <div class="sign-in" id="sign-in">
+            <!--Sign in screen is displayed here-->
+            Username:
+            <input type="text" id="text-box"></input>
+            <input type="button" id="join-btn" value="Join Trivia" onclick="joinTrivia()"></input>
+        </div>
+
+        <div class="quiz-info" id="quiz-info">
+            <!--Quiz info is displayed here-->
+        </div>
+        
+        <div class="quiz-score" id="quiz-score">
+            <!--Quiz score is displayed here-->
+        </div>
+
+        <div class="countdown" id="countdown">
+            <!--Countdown is displayed here-->
+        </div>
+
+        <div class="quiz" id="quiz">
+            <!--Trivia quiz is played here-->
+        </div>
+
+        <div class="leaderboard" id="leaderboard">
+            <!--Leader board is displayed here-->
+        </div>
+
+        <div class="quiz-buttons" id="quiz-buttons">
+            <!--Quiz buttons are displayed here-->
+        </div>
+
+        <div class ="chat-head" id="chat-head">
+            <h3>Game Chat</h3>
+            <!--Chat header-->
+        </div>
+
+        <div class="chat" id="chat">
+            <!--Chat is displayed here-->
+        </div>
+
+        <div class="chat-button" id="chat-button">
+            <!--Button to send a new chat message-->
+            <input id="message" autocomplete="off" />
+            <input type="button" value="Send" onclick="sendMessage()"></input>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/main.js"></script>
+
+    </body>
+</html>
