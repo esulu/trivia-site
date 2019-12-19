@@ -1,6 +1,8 @@
-### Trivia Game
+# Trivia Game
 
 Online trivia game made using web sockets. 
+
+Want to play? Then head over to the [Heroku page](https://trivia-site.herokuapp.com/)
 
 ## How to play 
 
