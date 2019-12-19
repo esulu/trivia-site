@@ -1,13 +1,13 @@
 var request = require('request');
 var app = require('express')();
 
-const PORT = 'process.env.PORT || 3000';
+/*(const PORT = 'process.env.PORT || 3000';
 const INDEX = '/index.html';
 const server = express()
     .use((req, res) => res.sendFile(INDEX, { root: __dirname }))
-    .listen(PORT, () => console.log(`Listening on ${PORT}`));
+    .listen(PORT, () => console.log(`Listening on ${PORT}`));*/
 
-//var http = require('http').createServer(app);
+var http = require('http').createServer(app);
 var io = SocketIO(server);
 var io = require('socket.io')(http);
 var fs = require('fs');
@@ -483,5 +483,5 @@ io.on('connection', function(socket) {
 
 });
 
-//app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000);
 

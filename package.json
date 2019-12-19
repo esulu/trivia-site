@@ -15,5 +15,7 @@
   },
   "author": "Eren Sulutas",
   "license": "ISC",
-  "engines": {"node": "10.x"}
+  "engines": {
+    "node": "10.x"
+  }
 }
