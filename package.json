@@ -14,5 +14,6 @@
     "start": "node server.js"
   },
   "author": "Eren Sulutas",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {"node": "10.x"}
 }
