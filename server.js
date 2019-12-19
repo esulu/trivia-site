@@ -1,6 +1,5 @@
 var request = require('request');
 var app = require('express')();
-
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 var fs = require('fs');
@@ -476,5 +475,5 @@ io.on('connection', function(socket) {
 
 });
 
-app.listen(process.env.PORT || 3000);
+http.listen(process.env.PORT || 3000);
 
