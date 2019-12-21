@@ -254,7 +254,7 @@ io.on('connection', function(socket) {
            
            // No more questions, send last one with information that this is the end of the round
            io.emit('nextQuestion', JSON.stringify({quiz : questions[0], currentRound : roundNum, currentQuestion : questionNum}));
-            console.log("last question of round");
+
            // Get a new batch of questions for the next round
            makeRequest( function() { } );
 
@@ -265,7 +265,6 @@ io.on('connection', function(socket) {
 
            // Send data to all clients 
            io.emit('nextQuestion', JSON.stringify({quiz : questions[questionNum-1], currentRound : roundNum, currentQuestion : questionNum}));
-            console.log("new question (not last)");
        }
 
     });
