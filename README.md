@@ -17,7 +17,7 @@ Want to play? Then head over to the [Heroku page](https://trivia-site.herokuapp.
 - A display of all active players and their respective scores will be displayed above the question
     - The text of players with completed answers will be green if there are multiple players
 
-All trivia questions are requested from [opentdb.com](opentdb.com).
+All trivia questions are requested from [opentdb.com](https://opentdb.com/).
 
 ## Extras 
 
